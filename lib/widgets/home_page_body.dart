@@ -1,8 +1,7 @@
-import 'package:calculator/widgets/custom_column.dart';
 import 'package:calculator/widgets/custom_input_and_result.dart';
 import 'package:calculator/widgets/first_row.dart';
-import 'package:calculator/widgets/row_column_number.dart';
 import 'package:calculator/widgets/second_row.dart';
+import 'package:calculator/widgets/thierd_row.dart';
 import 'package:flutter/material.dart';
 
 class HomePageBody extends StatelessWidget {
@@ -48,20 +47,6 @@ class HomePageBody extends StatelessWidget {
           const ThiredRow(),
         ],
       ),
-    );
-  }
-}
-
-class ThiredRow extends StatelessWidget {
-  const ThiredRow({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Row(
-      children: [
-        RowColumnNumber(),
-        CustomColumn(),
-      ],
     );
   }
 }
