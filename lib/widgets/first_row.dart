@@ -11,6 +11,7 @@ class FirstRow extends StatelessWidget {
       child: Row(
         children: [
           CustomBotton(
+            fontSize: 25,
             text: 'e',
             minWidth: 62,
             height: 40,
@@ -21,7 +22,8 @@ class FirstRow extends StatelessWidget {
             width: 30,
           ),
           CustomBotton(
-            text: '@',
+            fontSize: 25,
+            text: 'π',
             minWidth: 62,
             height: 40,
             color: Color(0xff303136),

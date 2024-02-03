@@ -1,4 +1,6 @@
+import 'package:calculator/cubit/cubit/calculate_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CustomBotton extends StatelessWidget {
   const CustomBotton({
@@ -28,7 +30,9 @@ class CustomBotton extends StatelessWidget {
       height: height,
       textColor: textColor,
       color: color,
-      onPressed: () {},
+      onPressed: () {
+        BlocProvider.of<CalculateCubit>(context).getInputOutputText(text: text);
+      },
       child: Text(
         text,
         style: TextStyle(

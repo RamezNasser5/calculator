@@ -13,19 +13,16 @@ class HomePageBody extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
       decoration: const BoxDecoration(
-          gradient: LinearGradient(
-              begin: Alignment.topRight,
-              end: Alignment.bottomLeft,
-              stops: [
-            0.05,
-            0.1,
-            0.17
-          ],
-              colors: [
+        gradient: RadialGradient(
+          center: Alignment.topRight,
+          stops: [0.3, 0.5, 0.8],
+          colors: [
             Color(0xff005DB2),
             Color(0xff29A8FF),
             Color(0xff000000),
-          ])),
+          ],
+        ),
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
